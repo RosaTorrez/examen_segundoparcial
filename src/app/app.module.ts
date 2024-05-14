@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './commons/header/header.component';
@@ -9,6 +9,7 @@ import { MainComponent } from './pages/main/main.component';
 import { NofoundComponent } from './pages/nofound/nofound.component';
 import { BanerComponent } from './commons/baner/baner.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { UltimoComponent } from './commons/ultimo/ultimo.component';
 import { DatosComponent } from './institucional/datos/datos/datos.component';
 import { GeograficaComponent } from './institucional/datos/geografica/geografica.component';
 import { EjecutivoComponent } from './institucional/datos/ejecutivo/ejecutivo.component';
@@ -21,8 +22,10 @@ import { DirectorioComponent } from './institucional/datos/directorio/directorio
     HeaderComponent,
     FooterComponent,
     MainComponent,
+
     NofoundComponent,
     BanerComponent,
+    UltimoComponent,
     InicioComponent,
     DatosComponent,
     GeograficaComponent,

@@ -1,0 +1,16 @@
+
+@media (max-width: 600px) {
+    .service-time {
+        padding: 10px;
+        font-size: smaller;
+    }
+}
+.col-lg-4 col-md-4 col-sm-12 col-xs-12{
+    display: flex;
+
+}
+.row{
+            margin: 2px;
+            padding: 20px;
+            
+}

@@ -1,46 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './pages/main/main.component';
+
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { DatosComponent } from './institucional/datos/datos/datos.component';
 import { DirectorioComponent } from './institucional/datos/directorio/directorio.component';
-import { NofoundComponent } from './pages/nofound/nofound.component';
 import { EjecutivoComponent } from './institucional/datos/ejecutivo/ejecutivo.component';
 import { EstructuraComponent } from './institucional/datos/estructura/estructura.component';
-import { DatosComponent } from './institucional/datos/datos/datos.component';
 import { GeograficaComponent } from './institucional/datos/geografica/geografica.component';
-
-
 const routes: Routes = [
-  {path : '',
-    children: [
-
-  
-  { path : "", component : MainComponent },
-  { path: 'intitucional',
-      children:[
-            {
-              path: 'datos',
-              component: DatosComponent
-            },
-            {
-              path: 'situacionGeografica',
-              component: GeograficaComponent
-            },
-            {
-              path: 'geografica',
-              component: GeograficaComponent
-            },
-            {
-              path: 'ejecutivo',
-              component: EjecutivoComponent
-            },
-            {
-              path: 'estructura',
-              component: EstructuraComponent
-            },
-          ]
-        }
-      ]
-    }
+ 
+  { path : "inicio", component : InicioComponent},
+  { path : "datos", component : DatosComponent},
+  { path : "directorio", component : DirectorioComponent}, 
+  { path : "ejecutivo", component : EjecutivoComponent}, 
+  { path : "estructura", component : EstructuraComponent},
+  { path : "geografica", component : GeograficaComponent},      
 
 ];
 
